@@ -1,1 +1,257 @@
-<h1>Hello!</h1>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="CoNav: Collaborative Cross-Modal Reasoning for Embodied Navigation">
+  <meta name="keywords"
+    content=CoNav, Collaborative Cross-Modal Reasoning for Embodied Navigation>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CoNav: Collaborative Cross-Modal Reasoning for Embodied Navigation</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+  <style>
+    .teaser-section {
+        background-color: #f0f0f0; /* Light grey background for contrast */
+        margin-bottom: 0; /* Adjust as needed */
+    }
+
+    .news-item {
+      background-color: #f0f8ff; /* Light blue background for contrast */
+      border-left: 5px solid #007bff; /* Blue border for emphasis */
+      padding: 10px 20px; /* Padding for spacing */
+      margin: 10px 0; /* Margin for separation between items */
+      font-family: Arial, sans-serif; /* Font styling */
+    }
+
+    .news-bug-item {
+      background-color: #fffcf0; /* Light blue background for contrast */
+      border-left: 5px solid #f7b605; /* Blue border for emphasis */
+      padding: 10px 20px; /* Padding for spacing */
+      margin: 10px 0; /* Margin for separation between items */
+      font-family: Arial, sans-serif; /* Font styling */
+    }
+
+    .news-icon {
+        color: #ff4500; /* Orange color for the icon */
+        font-size: 20px; /* Larger size for the icon */
+    }
+
+    .news-title {
+        color: #007bff; /* Blue color for the title */
+        font-weight: bold; /* Bold font for the title */
+        font-size: 18px; /* Font size for the title */
+    }
+
+    .news-bug-title {
+        color: #f7b605; /* Blue color for the title */
+        font-weight: bold; /* Bold font for the title */
+        font-size: 18px; /* Font size for the title */
+    }
+
+    .news-content {
+        color: #333333; /* Dark grey for content text */
+        font-size: 14px; /* Font size for content */
+        margin-top: 10px; /* Space above the content */
+    }
+
+    .publication-videos-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    
+    .publication-video {
+      width: 100%;
+    }
+    .publication-video iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+    
+    /* Styling for the summary element */
+    summary {
+      color: #007bff; /* Blue color for the title */
+      font-weight: bold; /* Bold font for the title */
+      font-size: 18px; /* Font size for the title */
+      cursor: pointer; /* Changes cursor to pointer on hover */
+      list-style: none; /* Removes default list marker */
+      border-left: 5px solid #007bff; /* Blue border for emphasis */
+      background-color: #f8f9fa; /* Light gray background */
+      padding: 10px 15px; /* Padding for better spacing */
+      border-radius: 5px; /* Rounded corners */
+      display: block; /* Ensure it fills the container */
+  }
+
+    /* Remove default marker for all browsers */
+    summary::-webkit-details-marker,
+    summary::marker {
+      display: none;
+    }
+
+    /* Optional: Add custom icon for the collapsible indicator */
+    summary::before {
+      content: '▶'; /* Triangle pointing right */
+      font-size: 12px; /* Smaller font size for the icon */
+      color: black; /* Icon color */
+      padding-right: 5px; /* Space between icon and text */
+      transition: transform 0.2s; /* Smooth transition for icon rotation */
+    }
+
+    /* Rotate icon when details is open */
+    details[open] summary::before {
+      transform: rotate(90deg); /* Rotates the icon 90 degrees */
+    }
+
+    
+  </style>
+
+</head>
+
+<body>
+  <h1 class="title is-1 publication-title">CoNav</h1>
+  <h1 class="title is-3 publication-title">Collaborative Cross-Modal Reasoning for Embodied Navigation</h1>
+  
+  <div class="is-size-5 publication-authors">
+    <span class="author-block">
+      <a href="https://abdd.top" target="_blank">Haihong Hao<sup>🍕</sup></a>;
+    </span>
+    <span class="author-block">
+      <a href="https://mingfei.info" target="_blank">Mingfei Han<sup>🌭</sup></a>;
+    </span>
+    <span class="author-block">
+      <a href="https://scholar.google.com/citations?hl=en&user=RLAgwBkAAAAJ" target="_blank">Changlin Li<sup>🍔</sup></a>;
+    </span>
+    <span class="author-block">
+      Zhihui Li<sup>🍕</sup>;
+    </span>
+    <span class="author-block">
+      <a href="https://www.xiaojun.ai/" target="_blank">Xiaojun Chang<sup>🍕</sup></a>
+    </span>
+  </div>
+  <div class="is-size-6 publication-authors">
+    <span class="author-block"><sup>🍕</sup>University of Science and Technology of China</span>
+    <span class="author-block"><sup>🌭</sup>MBZUAI</span>
+    <span class="author-block"><sup>🍔</sup>Stanford University</span>
+  </div>
+  
+  <br>
+  
+  <p align="center">
+      <img src="assets/icon.png" width="30%"><br>
+  </p>
+  
+  <div>
+      <a href='https://arxiv.org/abs/' target='_blank'>
+          <img src='https://img.shields.io/badge/Paper-Arxiv-red'>
+      </a>
+      <a href="https://opensource.org/licenses/MIT">
+          <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT">
+      </a>
+  </div>
+  
+
+
+  <section class="teaser-section">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <h2 class="subtitle has-text-centered">
+          Overview of our CoNav data generation. Spatial and geometry awareness, object variety and open vocabulary are enabled by multiple expert models. Depth estimation, camera poses and texts are integrated to advance open-world embodied navigation.
+        </h2>
+        <div class="publication-videos-container">
+          <div class="publication-video">
+            <!-- <iframe src="./static/images/data_generation_pipeline.png"></iframe> -->
+            <img src="./static/images/data_generation_pipeline.png" style="width:100%;height:auto;text-align:center;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Embodied navigation demands comprehensive scene understanding and precise spatial reasoning. While image–text models excel at interpreting pixel‐level color and lighting cues, 3D–text models capture volumetric structure and spatial relationships. However, unified fusion approaches that jointly fuse 2D images, 3D point clouds, and textual instructions face challenges in limited availability of triple-modality data and difficulty resolving conflicting beliefs among modalities.            </p>
+            <p>
+              In this work, we introduce CoNav, a collaborative cross-modal reasoning framework where a pretrained 3D–text model explicitly guides a image-text navigation agent by providing structured spatial-semantic knowledge to resolve ambiguities during navigation. Specifically, we introduce Cross-Modal Belief Alignment, which operationalizes this cross-modal guidance by simply sharing textual hypotheses from the 3D–text model to the navigation agent. 
+            </p>
+            <p>
+              Through lightweight fine-tuning on a small 2D–3D–text corpus, the navigation agent learns to integrate visual cues with spatial-semantic knowledge derived from 3D-text model, enabling effective reasoning in Embodied navigation. CoNav achieves significant improvements on four standard embodied navigation benchmarks (R2R, CVDN, REVERIE, SOON) and two spatial reasoning benchmarks (ScanQA, SQA3D). Moreover, under close navigation Success Rate, CoNav often generates shorter paths compared to other methods (as measured by SPL), showcasing the potential and challenges of fusing data from different modalities in embodied navigation.
+            </p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      
+
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+TODO
+  </code></pre>
+    </div>
+  </section>
+
+  <div style="text-align:center;">
+    <img src="assets/example_5.gif" width="400" alt="Demo GIF">
+  </div>
+  
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              Website design from <a href="https://nerfies.github.io/">Nerfies</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
