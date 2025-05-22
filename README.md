@@ -6,7 +6,7 @@
     <a href='https://abdd.top' target='_blank'>Haihong Hao<sup>🍕</sup></a>;
     <a href='https://mingfei.info' target='_blank'>Mingfei Han<sup>🌭</sup></a>;
     <a href='https://scholar.google.com/citations?hl=en&user=RLAgwBkAAAAJ' target='_blank'>Changlin Li<sup>🍔</sup></a>;
-    Zhihui Li<sup>🍕</sup></a>;
+    <a href='https://www.zhihui.li/' target='_blank'>Zhihui Li<sup>🍕</sup></a>;
     <a href='https://www.xiaojun.ai/' target='_blank'>Xiaojun Chang<sup>🍕</sup></a>
 </div>
 <sup>🍕</sup>University of Science and Technology of China
