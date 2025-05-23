@@ -22,7 +22,7 @@
 </div>
 
 <div>
-    <a href='https://arxiv.org/abs/' target='_blank'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
+    <a href='https://arxiv.org/abs/2505.16663' target='_blank'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
     <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
 </div>
 
@@ -51,6 +51,12 @@ If you find this work helpful, please consider citing:
 ```bibtex
 TODO
 ```
+<div style="width: 100%; display: flex; justify-content: center; align-items: center; margin: 20px 0;">
+    <span style="font-size: 1.2em; font-weight: bold; color: #444;">
+        Thank you (.❛ ᴗ ❛.)
+    </span>
+</div>
+
 ## 📖 Example 
 
 ![Alt text](assets/example_5.gif)
