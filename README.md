@@ -49,7 +49,12 @@ We also acknowledge the significant benefits of using [DUET](https://github.com/
 If you find this work helpful, please consider citing:
 
 ```bibtex
-TODO
+@article{hao2025conav,
+  title={CoNav: Collaborative Cross-Modal Reasoning for Embodied Navigation},
+  author={Hao, Haihong and Han, Mingfei and Li, Changlin and Li, Zhihui and Chang, Xiaojun},
+  journal={arXiv preprint arXiv:2505.16663},
+  year={2025}
+}
 ```
 <div style="width: 100%; display: flex; justify-content: center; align-items: center; margin: 20px 0;">
     <span style="font-size: 1.2em; font-weight: bold; color: #444;">
