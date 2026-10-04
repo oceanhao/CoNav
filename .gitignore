@@ -1,0 +1,23 @@
+# Model checkpoints and training outputs
+*.ckpt
+*.pth
+*.pt
+*.safetensors
+*.bin
+checkpoints/
+outputs/
+wandb/
+logs/
+
+# Datasets and simulator assets
+data/
+datasets/
+Matterport3DSimulator/
+
+# Python and editor artifacts
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+.idea/
+.vscode/

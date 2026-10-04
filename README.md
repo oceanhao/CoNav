@@ -31,12 +31,25 @@
 
 Embodied navigation demands comprehensive scene understanding and precise spatial reasoning. While image-text models excel at interpreting pixel-level color and lighting cues, 3D-text models capture volumetric structure and spatial relationships. However, unified fusion approaches that jointly fuse 2D images, 3D point clouds, and textual instructions face challenges in limited availability of triple-modality data and difficulty resolving conflicting beliefs among modalities. In this work, we introduce CoNav, a collaborative cross-modal reasoning framework where a pretrained 3D-text model explicitly guides an image-text navigation agent by providing structured spatial-semantic knowledge to resolve ambiguities during navigation. Specifically, we introduce Cross-Modal Belief Alignment, which operationalizes this cross-modal guidance by simply sharing textual hypotheses from the 3D-text model to the navigation agent. Through lightweight fine-tuning on a small 2D-3D-text corpus, the navigation agent learns to integrate visual cues with spatial-semantic knowledge derived from the 3D-text model, enabling effective reasoning in embodied navigation. CoNav achieves significant improvements on four standard embodied navigation benchmarks (R2R, CVDN, REVERIE, SOON) and two spatial reasoning benchmarks (ScanQA, SQA3D). Moreover, under close navigation Success Rate, CoNav often generates shorter paths compared to other methods (as measured by SPL), showcasing the potential and challenges of fusing data from different modalities in embodied navigation.
 
-## 🍻 TODOs
+## 💻 Code and reproduction status
 
-- [ ] Release CoNav pretraining code.
-- [ ] Release CoNav Cross-Modal Belief Alignment fine-tuning code.
-- [ ] Release models weights.
-- [ ] Release data preparation scripts.
+This repository includes a recovered, partial source snapshot under [`code/`](code/README.md), organized into the navigation model and 3D-LLM components. It follows the NaviLLM and PointLLM project foundations described below.
+
+The recovered snapshot is incomplete: experiment configurations, launch and data preparation scripts, dependency pins, datasets, and model checkpoints were not available in the source material used for this reconstruction. End-to-end training and benchmark evaluation have not yet been verified from this checkout. See the [code documentation](code/README.md) for the directory map and environment guidance.
+
+### Environment references
+
+- [NaviLLM](https://github.com/zd11024/NaviLLM) — navigation framework and installation instructions.
+- [PointLLM](https://github.com/InternRobotics/PointLLM) — 3D point-cloud language model and installation instructions.
+
+The exact CoNav dependency lockfile could not be recovered, so use the upstream setup as a starting point and adapt PyTorch/CUDA to your machine. Dataset and checkpoint downloads are handled separately by their respective projects and licenses.
+
+## 🍻 Code release status
+
+- [x] Publish the locally recovered CoNav model source snapshot.
+- [ ] Recover and publish the complete pretraining and cross-modal belief alignment pipelines.
+- [ ] Recover experiment configurations, environment pins, and data preparation scripts.
+- [ ] Release model weights when available and cleared for distribution.
 
 ## 🥂 Acknowledgements
 
