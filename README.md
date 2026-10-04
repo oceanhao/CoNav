@@ -44,12 +44,6 @@ The recovered snapshot is incomplete: experiment configurations, launch and data
 
 The exact CoNav dependency lockfile could not be recovered, so use the upstream setup as a starting point and adapt PyTorch/CUDA to your machine. Dataset and checkpoint downloads are handled separately by their respective projects and licenses.
 
-## 🍻 Code release status
-
-- [x] Publish the locally recovered CoNav model source snapshot.
-- [ ] Recover and publish the complete pretraining and cross-modal belief alignment pipelines.
-- [ ] Recover experiment configurations, environment pins, and data preparation scripts.
-- [ ] Release model weights when available and cleared for distribution.
 
 ## 🥂 Acknowledgements
 
